@@ -28,7 +28,7 @@ public class Main {
                     a1.delete();
                     break;
                 case 5:
-                    a1.sort();
+                    a1.insertionsort();
                     break;
                 case 6:
                     a1.search();

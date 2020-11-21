@@ -46,18 +46,19 @@ public class aarrays{
         N=N-1;
 
     }
-    public void sort(){
-    for(int i=N;i>1;i--){
-        for(int j=0;j<i-1;j++){
-            if(marsh[j]>marsh[j+1]){
-                int temp=marsh[j+1];
-                marsh[j+1]=marsh[j];
-                marsh[j]=temp;
-                System.out.println("the sorted array is");
-                put_data();
+    public void insertionsort(){
+        int k=marsh.length;
+        int j,i,key;
+        for(j=1;j<k;++j){
+            key=marsh[j];
+            i=j-1;
+            while(i>=0 && marsh[i]>key){
+                marsh[i+1]=marsh[i];
+                i--;
             }
+            marsh[i+1]=key;
         }
-    }
+
     }
     public void search() {
         System.out.println("enter the element to be searched in the given array");
