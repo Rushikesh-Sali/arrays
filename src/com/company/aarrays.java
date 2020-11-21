@@ -47,9 +47,9 @@ public class aarrays{
 
     }
     public void insertionsort(){
-        int k=marsh.length;
+
         int j,i,key;
-        for(j=1;j<k;++j){
+        for(j=1;j<N;++j){
             key=marsh[j];
             i=j-1;
             while(i>=0 && marsh[i]>key){
